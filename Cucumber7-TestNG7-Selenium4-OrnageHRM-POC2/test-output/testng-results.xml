@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="48066" started-at="2022-10-04T16:52:44 IST" finished-at="2022-10-04T16:53:32 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sadakar.testng.runner.RunCucumberTest@6c9f5c0d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="48066" started-at="2022-10-04T16:52:44 IST" finished-at="2022-10-04T16:53:32 IST">
+      <class name="com.sadakar.testng.runner.RunCucumberTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.sadakar.testng.runner.RunCucumberTest@6c9f5c0d]" name="setUpClass" is-config="true" duration-ms="728" started-at="2022-10-04T16:52:44 IST" finished-at="2022-10-04T16:52:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sadakar.testng.runner.RunCucumberTest@6c9f5c0d]" name="runScenario" duration-ms="11993" started-at="2022-10-04T16:52:44 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T16:52:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginValidCredentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to HRM Application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sadakar.testng.runner.RunCucumberTest@6c9f5c0d]" name="runScenario" duration-ms="9951" started-at="2022-10-04T16:52:56 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T16:53:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginWithInvalidCredentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to HRM Application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[URL mismatched expected [https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: URL mismatched expected [https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at com.sadakar.stepdefinitions.HRMLoginPage.validateURL(HRMLoginPage.java:36)
+at ✽.validate the URL(classpath:features/HRMLogin.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sadakar.testng.runner.RunCucumberTest@6c9f5c0d]" name="runScenario" duration-ms="16970" started-at="2022-10-04T16:53:06 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T16:53:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginValidCredentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Logout to HRM Application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sadakar.testng.runner.RunCucumberTest@6c9f5c0d]" name="runScenario" duration-ms="7940" started-at="2022-10-04T16:53:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T16:53:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginWithInvalidCredentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Logout to HRM Application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[URL mismatched expected [https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: URL mismatched expected [https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at com.sadakar.stepdefinitions.HRMLoginPage.validateURL(HRMLoginPage.java:36)
+at ✽.validate the URL(classpath:features/HRMLogout.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.sadakar.testng.runner.RunCucumberTest@6c9f5c0d]" name="tearDownClass" is-config="true" duration-ms="401" started-at="2022-10-04T16:53:31 IST" finished-at="2022-10-04T16:53:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.sadakar.testng.runner.RunCucumberTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
