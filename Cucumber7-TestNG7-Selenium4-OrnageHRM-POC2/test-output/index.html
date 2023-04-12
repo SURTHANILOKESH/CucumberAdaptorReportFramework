@@ -24,22 +24,22 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suite">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
               <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\surth\git\CucumberFramework\Cucumber7-TestNG7-Selenium4-OrnageHRM-POC2\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\surth\OneDrive\Documents\GitHub\CucumberAdaptorReportFramework\Cucumber7-TestNG7-Selenium4-OrnageHRM-POC2\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,13 +103,8 @@
                     </span>
                     <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sadakar.testng.runner.RunCucumberTest" hash-for-method="runScenario(&quot;LoginWithInvalidCredentials&quot;, &quot;Optional[Logout to HRM Application]&quot;)">runScenario("LoginWithInvalidCredentials", "Optional[Logout to HRM Application]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sadakar.testng.runner.RunCucumberTest" hash-for-method="runScenario(&quot;LoginWithInvalidCredentials&quot;, &quot;Optional[Login to HRM Application]&quot;)">runScenario("LoginWithInvalidCredentials", "Optional[Login to HRM Application]")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sadakar.testng.runner.RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;LoginWithInvalidCredentials&quot;, &quot;Optional[Login to HRM Application]&quot;)">runScenario("LoginWithInvalidCredentials", "Optional[Login to HRM Application]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -122,13 +117,8 @@
                     </span>
                     <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sadakar.testng.runner.RunCucumberTest" hash-for-method="runScenario(&quot;LoginValidCredentials&quot;, &quot;Optional[Logout to HRM Application]&quot;)">runScenario("LoginValidCredentials", "Optional[Logout to HRM Application]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sadakar.testng.runner.RunCucumberTest" hash-for-method="runScenario(&quot;LoginValidCredentials&quot;, &quot;Optional[Login to HRM Application]&quot;)">runScenario("LoginValidCredentials", "Optional[Login to HRM Application]")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sadakar.testng.runner.RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;LoginValidCredentials&quot;, &quot;Optional[Login to HRM Application]&quot;)">runScenario("LoginValidCredentials", "Optional[Login to HRM Application]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -151,26 +141,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;LoginWithInvalidCredentials&quot;, &quot;Optional[Logout to HRM Application]&quot;)">
-                  </a> <!-- runScenario("LoginWithInvalidCredentials", "Optional[Logout to HRM Application]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("LoginWithInvalidCredentials", "Optional[Logout to HRM Application]")</span>
-                  <div class="stack-trace">java.lang.AssertionError: URL mismatched expected [https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
-	at com.sadakar.stepdefinitions.HRMLoginPage.validateURL(HRMLoginPage.java:36)
-	at ✽.validate the URL(classpath:features/HRMLogout.feature:16)
-... Removed 5 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;LoginWithInvalidCredentials&quot;, &quot;Optional[Login to HRM Application]&quot;)">
                   </a> <!-- runScenario("LoginWithInvalidCredentials", "Optional[Login to HRM Application]") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("LoginWithInvalidCredentials", "Optional[Login to HRM Application]")</span>
-                  <div class="stack-trace">java.lang.AssertionError: URL mismatched expected [https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+                  <div class="stack-trace">java.lang.AssertionError: URL mismatched expected [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
 	at com.sadakar.stepdefinitions.HRMLoginPage.validateURL(HRMLoginPage.java:36)
 	at ✽.validate the URL(classpath:features/HRMLogin.feature:15)
 ... Removed 5 stack frames
@@ -189,16 +164,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;LoginValidCredentials&quot;, &quot;Optional[Logout to HRM Application]&quot;)">
-                  </a> <!-- runScenario("LoginValidCredentials", "Optional[Logout to HRM Application]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("LoginValidCredentials", "Optional[Logout to HRM Application]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;LoginValidCredentials&quot;, &quot;Optional[Login to HRM Application]&quot;)">
                   </a> <!-- runScenario("LoginValidCredentials", "Optional[Login to HRM Application]") -->
                   <span class="method-name">runScenario</span>
@@ -212,15 +177,16 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\surth\git\CucumberFramework\Cucumber7-TestNG7-Selenium4-OrnageHRM-POC2\testng.xml</span>
+            <span class="header-content">C:\Users\surth\OneDrive\Documents\GitHub\CucumberAdaptorReportFramework\Cucumber7-TestNG7-Selenium4-OrnageHRM-POC2\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.sadakar.common.Hooks&quot;/&gt;
       &lt;class name=&quot;com.sadakar.testng.runner.RunCucumberTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -235,7 +201,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -269,28 +235,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.sadakar.testng.runner.RunCucumberTest')
-data.setCell(0, 3, 16970);
+data.setCell(0, 3, 21456);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.sadakar.testng.runner.RunCucumberTest')
-data.setCell(1, 3, 11993);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'com.sadakar.testng.runner.RunCucumberTest')
-data.setCell(2, 3, 9951);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'com.sadakar.testng.runner.RunCucumberTest')
-data.setCell(3, 3, 7940);
+data.setCell(1, 3, 14518);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -323,27 +281,17 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("LoginValidCredentials", "Optional[Login to HRM Application]")</span>
-                <span class="method-start">745 ms</span>
+                <span class="method-start">647 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("LoginWithInvalidCredentials", "Optional[Login to HRM Application]")</span>
-                <span class="method-start">12756 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("LoginValidCredentials", "Optional[Logout to HRM Application]")</span>
-                <span class="method-start">22713 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("LoginWithInvalidCredentials", "Optional[Logout to HRM Application]")</span>
-                <span class="method-start">39684 ms</span>
+                <span class="method-start">22103 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">47638 ms</span>
+                <span class="method-start">36623 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

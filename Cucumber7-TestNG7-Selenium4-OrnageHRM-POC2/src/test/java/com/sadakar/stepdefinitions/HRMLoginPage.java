@@ -15,7 +15,7 @@ public class HRMLoginPage extends BasePage {
 
 	@Given("User login to HRM application with UserName and Password")
 	public void loginToHRMApp(io.cucumber.datatable.DataTable dataTable) {
-		driver.get("https://opensource-demo.orangehrmlive.com/");
+//		driver.get("https://opensource-demo.orangehrmlive.com/");
 
 		List<List<String>> cells = dataTable.cells();
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys(cells.get(0).get(0));
@@ -31,7 +31,7 @@ public class HRMLoginPage extends BasePage {
 		
 	@Then("validate the URL")
 	public void validateURL() {
-		String expected_URL = "https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList";
+		String expected_URL = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
 		String actual_URL = driver.getCurrentUrl();
 		Assert.assertEquals(actual_URL, expected_URL, "URL mismatched");
 

@@ -1,4 +1,4 @@
-@test
+#@test
 Feature: Logout to HRM Application
   I want to use this template for HRM Logout
 

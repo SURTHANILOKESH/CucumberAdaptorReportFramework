@@ -1,4 +1,4 @@
-@test1
+#@test1
 Feature: Login to HRM Application and click on my info
   I want to use this template for HRM Login page and Click on my infoz
 

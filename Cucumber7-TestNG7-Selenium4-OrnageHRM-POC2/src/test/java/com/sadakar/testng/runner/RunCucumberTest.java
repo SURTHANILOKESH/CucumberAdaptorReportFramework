@@ -16,7 +16,7 @@ import io.cucumber.testng.CucumberOptions;
 		features = "classpath:features", glue = {"com.sadakar.common", "com.sadakar.stepdefinitions",
 				"com.sadakar.testng.runner"},
 
-		plugin = { "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, 
+		plugin = {"pretty", "html:target/cucumber-reports.html", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, 
 		
 		monochrome = true)
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
