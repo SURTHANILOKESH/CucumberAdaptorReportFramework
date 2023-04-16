@@ -13,10 +13,17 @@ import io.cucumber.testng.CucumberOptions;
 		
 		//tags="@LoginValidCredentials and not @DashboardTabCountOfQuickLaunhElements and not @DirectoryTabNavigationFromDashboardTab and not @DirectoryTabIsSearchButtonDisplayed",
 		
-		features = "classpath:features", glue = {"com.sadakar.common", "com.sadakar.stepdefinitions",
+		features = "classpath:features", 
+		
+		glue = {"com.sadakar.common", "com.sadakar.stepdefinitions",
 				"com.sadakar.testng.runner"},
 
-		plugin = {"pretty", "html:target/cucumber-reports.html", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, 
+		plugin = {"pretty", 
+				"html:target/cucumber-reports-html.html", 
+				"json:target/cucumber-reports-json.json", 
+				"junit:target/cucumber-reports-xml.xml", 
+				"rerun:target/rerun.txt", 
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, 
 		
 		monochrome = true)
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
